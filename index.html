@@ -56,7 +56,7 @@
             <h1 class="title is-1 publication-title">HarmonySet: A Comprehensive Dataset for Understanding Video-Music Semantic Alignment and Temporal Synchronization</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              
+              <!--
               <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
                 <span class="author-block">
@@ -112,7 +112,10 @@
                   <span>arXiv</span> 
                 
                 </a>
-              </span>
+              </span> -->
+              <span class="author-block">
+                Anonymous Author</span>
+                  <hr>
             </div>
           </div>
         </div>
@@ -177,6 +180,7 @@
       }
     }
   </style>
+
   <div class="is-max-desktop">
     <div class="section-title1">HarmonySet is the first instruction tuning dataset for MLLMs to understand the alignment between video and music, providing rich annotation on <br>
       <span style="color: forestgreen;">rhythmic synchronization</span>, 
@@ -254,25 +258,11 @@
       </div>
       <div class="item">
         <div class="image-title">Overview of Video-Music Datasets</div>
-        <img src="static/images/dataset_comparison.png" alt="MY ALT TEXT"/>
+        <img src="static/images/dataset_comparison_new.png" alt="MY ALT TEXT"/>
         <h2 class="subtitle has-text-centered">
           HarmonySet provides comprehensive video-music content, and stands out among existing video-music datasets by offering both semantic matching and temporal synchronization annotations.
         </h2>
       </div>
-      <!-- 
-      <div class="item">
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-    -->
   </div>
 </div>
 </div>
@@ -398,7 +388,7 @@
               <source src="static/videos/human.mp4" type="video/mp4">
               Your browser does not support the video tag.
           </video>
-          <div class="video-description">
+          <div class="video-description" style="margin-top: 20px">
             <strong>VideoLLaMA2</strong><br>The video and music match in terms of rhythm and synchronization, as the music plays throughout the video, and the camera pans and focuses on different parts of the city. The emotional impact of the music is upbeat and energetic. The cultural relevance of the video is related to Northern Ireland and its tourism industry.<br>
             <hr>
             <strong>VideoLLaMA2 with HarmonySet</strong><br> Rhythm and Synchronization: The tempo is moderate, allowing the viewer to take in the cityscape. <strong><span style="color:darkgreen;">There are moments of synchronization, particularly when the camera focuses on the Hotel. </span></strong>
@@ -431,6 +421,117 @@
   </div>
 </section>
 
+
+
+<section>
+  <style>
+    body {
+        font-family: sans-serif;
+    }
+
+    .section-title {
+        background-color: #eee;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size:20pt;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .video-container {
+        display: flex;
+        justify-content: space-around; /* Distribute space around items */
+        align-items: flex-start; /* Align items to the top */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .video-block {
+        width: 40%; /* Adjust width as needed */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+
+    .video-title {
+        font-weight: bold;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .video-description {
+        text-align: left;
+        padding: 10px;
+    }
+    .video-description2 {
+        text-align: left;
+        padding: 5px;
+    }
+    video {
+        width: 100%;
+        display: block;
+        justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+        .video-block {
+            width: 95%; /* Occupy almost full width on small screens */
+            margin: 10px auto; /* Center the blocks */
+            justify-content: center;
+            align-items: center;
+        }
+     }
+</style>
+  <div class="section-title">More Data Cases of HarmonySet</div>
+  <div class="video-container">
+
+      <div class="video-block">
+          <video poster="" autoplay controls muted loop style="width: 50%; margin-top: 10px">
+              <source src="static/videos/UC3bkumn_UznrERU-LoOEyAA.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+          <div class="video-description">
+            <strong><span style="color: forestgreen;">Rhythmic Synchronization:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The fast-paced cuts and transitions of the video align perfectly with the energetic tempo of the song. The edits often occur on the beat, creating a dynamic and engaging visual experience that complements the music's rhythm. <br>
+            <br>
+            <strong><span style="color: coral;">Thematic Coherence:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The visuals showcase shared moments of fun, friendship, and perhaps even a hint of romantic interest, resonating with the song's desire-centric theme. The activities shown, like eating, shopping, and sightseeing, suggest a sense of adventure and pursuit.<br>
+            <br>
+            <strong><span style="color: deepskyblue;">Emotional Alignment:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;Both the song and the video evoke feelings of joy, excitement, and youthful exuberance. The upbeat music and the smiles, laughter, and playful interactions in the video create a positive and energetic atmosphere.<br>
+            <br>
+            <strong><span style="color: blueviolet;">Cultural Relevance:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The video captures elements of contemporary youth culture, including fashion, social activities, and popular brands. This aligns with the modern pop sound of the song, making the overall presentation feel relevant and relatable to a younger audience.   
+          </div>
+      </div>
+
+      <div class="video-block">
+          <video poster="" controls muted loop style="width: 50%; margin-top: 10px">
+              <source src="static/videos/UCMkovwNApJVI9J8Gv1oHA7w.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </video>
+
+          <div class="video-description2">
+            <strong><span style="color: forestgreen;">Rhythmic Synchronization:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The music's playful and slightly quirky rhythm complements the video's action. The comical sound effect at precisely 0 seconds, coinciding with the initial fall, is a perfect example of synchronization, emphasizing the humorous nature of the wipeout. The shift to more upbeat music around the 5-second mark fits the transition of plot. <br>
+            <br>
+            <strong><span style="color: coral;">Thematic Coherence:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The lighthearted and almost whimsical tone of the music matches the video's theme of a minor snowboarding accident. It doesn't take itself too seriously, which is reflected in the music choice. The music supports the narrative of a small setback turned into a funny story.<br>
+            <br>
+            <strong><span style="color: deepskyblue;">Emotional Alignment:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The music helps convey a sense of amusement and lightheartedness, even though the snowboarder fell. The comedic sound effect at the moment of impact immediately sets a humorous tone.<br>
+            <br>
+            <strong><span style="color: blueviolet;">Cultural Relevance:</span></strong>
+            &nbsp;&nbsp;&nbsp;&nbsp;The music has a universal appeal due to its playful nature and doesn't necessarily tie into a specific culture. The video itself touches upon the culture of snowboarding and the lighthearted attitude often associated with extreme sports enthusiasts.   
+          </div>
+      </div>
+</div>
+</section>
 
 
 <!-- Paper poster -->
